@@ -25,8 +25,8 @@ function dateTime() {
         minute: '2-digit',
     }
     const stringDate = today.toLocaleString('en-US', dateOptions);
-    setInterval(dateTime, 500);
     document.getElementById('date').textContent = stringDate;
+    setInterval(dateTime, 500);
 }
 dateTime();
 (function () {
