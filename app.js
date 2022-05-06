@@ -105,7 +105,6 @@ todoList.addEventListener("click", function (event) {
     if (eventTarget.id === 'complete-toggle') {
         eventTarget.parentNode.parentNode.querySelector(".text").classList.toggle("lineThrough");
         updateLocalStorage();
-        todoInput.focus();
         if (eventTarget.classList.contains(uncheck)) {
             eventTarget.classList.toggle(uncheck);
             eventTarget.classList.toggle(checked);
@@ -121,8 +120,7 @@ todoList.addEventListener("click", function (event) {
     if (eventTarget.className === 'fa fa-trash-o de') {
         event.stopPropagation();
         eventTarget.parentNode.remove();  
-        updateLocalStorage();      
-        todoInput.focus();
+        updateLocalStorage();     
     }
 });
 
