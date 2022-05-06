@@ -28,6 +28,7 @@ function dateTime() {
     setInterval(dateTime, 1000);
     document.getElementById('date').textContent = stringDate;
 }
+dateTime();
 (function () {
     const copyDate = new Date();
     const copyYear = copyDate.getFullYear();
