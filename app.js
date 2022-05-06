@@ -34,6 +34,7 @@ if (todoArray) {
     copyright.textContent = copyYear;    
 }());
 
+ setTimeout(() => {document.querySelector(".guide").style.display = "none";}, 100000);
 
 // Create and add todo items dynamically
 function addTodo(todo) {
