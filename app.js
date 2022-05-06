@@ -15,7 +15,6 @@ if (todoArray) {
 }
 
 // Set Date
-(function () {
     const today = new Date();
     const dateOptions = {
         weekday: 'short',
@@ -25,9 +24,7 @@ if (todoArray) {
         minute: '2-digit',
     }
     const stringDate = today.toLocaleString('en-US', dateOptions);
-
     document.getElementById('date').textContent = stringDate;
-}());
 
 (function () {
     const copyDate = new Date();
@@ -76,7 +73,7 @@ function addTodo(todo) {
     item.appendChild(deleteBtn);
 
     // add item to list
-    todoList.prepend(item);  
+    todoList.append(item);  
 
     updateLocalStorage();
     todoInput.value = ''; 
