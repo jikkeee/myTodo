@@ -1,0 +1,202 @@
+/* ------------ youtube.com/CodeExplained ------------ */
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0,0,0,0.1);
+    font-family: 'Titillium Web', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* ------------ container ------------ */
+.container {
+    width: 325px;
+    max-width: 325px;
+}
+
+/* ------------ header ------------ */
+.header{
+    width: 100%;
+    height:200px;
+    background-image: url('../img/bg2.jpg');
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.clear{
+    width : 100%;
+    height: 30px;
+    margin-top: 10px;
+    padding: .625rem;
+ 
+    display: flex;
+    justify-content: end;
+}
+.clear i{
+    font-size: 30px;
+    color: #FFF;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+.date{
+    margin: 10px;
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+
+/* ------------ content ------------ */
+.content{
+    width:  100%;
+    max-height:350px;
+    background-color: #FFF;
+    overflow-y: auto;
+}
+
+
+.item{
+    display: block;
+    width:  100%;
+    height: 45px;
+    min-height: 45px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item > div {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+.item i.co{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    color:#6eb200;
+}
+.item p.text{
+   font-size: 1.25rem;
+   text-transform: capitalize;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+.item i.de{
+    display: inline-block;
+    margin-right: 15px;
+  font-size: 1.5625rem;
+}
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+/* ------------ add item ------------ */
+.add-to-do{
+    width: 100%;
+    height:40px;
+    background-color: #FFF;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+.add-to-do i{
+    font-size: 40px;
+    color: #4162f6;
+    cursor: pointer;
+}
+
+.add-to-do input{
+    height: 35px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
+}
+
+.add-to-do input:focus {
+    outline-color: #4162f6;
+}
+
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input::-moz-placeholder { /* Firefox 19+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-ms-input-placeholder { /* IE 10+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-moz-placeholder { /* Firefox 18- */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+/* footer */
+small, p.copyright {
+    color: #333;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
