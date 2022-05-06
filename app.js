@@ -15,6 +15,7 @@ if (todoArray) {
 }
 
 // Set Date
+function dateTime() {
     const today = new Date();
     const dateOptions = {
         weekday: 'short',
@@ -24,8 +25,9 @@ if (todoArray) {
         minute: '2-digit',
     }
     const stringDate = today.toLocaleString('en-US', dateOptions);
+    setInterval(dateTime, 1000);
     document.getElementById('date').textContent = stringDate;
-
+}
 (function () {
     const copyDate = new Date();
     const copyYear = copyDate.getFullYear();
